@@ -16,8 +16,8 @@
     <link rel="icon" type="image/png" href="icons/icon-192.png" />
     <link rel="apple-touch-icon" href="icons/apple-touch-icon.png" />
     <title>十三秒先の隣人 — 桜井 みゅう</title>
-    <script type="module" crossorigin src="./assets/index-D8nkiZjX.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-BvU4ZaAi.css">
+    <script type="module" crossorigin src="./assets/index-BXmSDr9Z.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-CvvCgKzo.css">
   <link rel="manifest" href="./manifest.webmanifest"><meta name="robots" content="noindex, nofollow" />
 </head>
   <body>
@@ -146,49 +146,49 @@
     <div id="menuModal" class="modal" hidden role="dialog" aria-modal="true" aria-label="設定">
       <div class="modal-backdrop" id="menuBackdrop"></div>
       <div class="modal-panel menu-panel">
+        
         <div class="modal-head">
           <h3 id="menuTitle">設定</h3>
-          
-          <div class="menu-head-nav">
-            <button id="toCoverFromMenuBtn" type="button" class="menu-cap-btn" hidden><span class="menu-cap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5.4v13.4" /><path d="M12 5.4C9.7 4.2 6.9 3.7 4.3 4.3v13.2c2.6-.6 5.4-.1 7.7 1.3 2.3-1.4 5.1-1.9 7.7-1.3V4.3c-2.6-.6-5.4-.1-7.7 1.1Z" /></svg><span>表紙へ</span></span></button>
-            <button id="tocFromMenuBtn" type="button" class="menu-cap-btn"><span class="menu-cap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M5 7h14M5 12h14M5 17h14" /></svg><span>目次へ</span></span></button>
-            <button id="menuCloseBtn" class="menu-close-btn" aria-label="閉じる"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" /></svg></button>
-          </div>
+          <button id="menuCloseBtn" class="menu-close-btn" aria-label="閉じる"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" /></svg></button>
         </div>
 
         
         <div class="menu-section">
-          <h4 class="setting-group" id="menuHeadAudio">音</h4>
-          <div id="menuGroupAudio">
-            <label class="menu-row toggle-label" id="rowPageSound"><span>ページめくり音</span><input type="checkbox" id="pageSoundToggle" checked /></label>
-            <label class="menu-row toggle-label" id="rowBgm"><span>BGM</span><input type="checkbox" id="bgmToggle" checked /></label>
+          <h4 class="setting-group" id="menuHeadPlay">朗読</h4>
+          <div id="menuGroupPlay">
+            <label class="menu-row toggle-label" id="rowNarration"><span>朗読する</span><input type="checkbox" id="narrationToggle" checked /></label>
+            
+            <div class="menu-row" id="rowSpeed">
+              <span>速さ</span>
+              <div class="seg speed-choices" id="speedChoices" role="group" aria-label="速さ"></div>
+            </div>
+            <label class="menu-row toggle-label" id="rowHl"><span>読んでいる文を強調</span><input type="checkbox" id="hlToggle" checked /></label>
+            <label class="menu-row toggle-label" id="rowBgPlay"><span>画面を消しても再生</span><input type="checkbox" id="bgPlayToggle" checked /></label>
           </div>
           <h4 class="setting-group" id="menuHeadDisplay">表示</h4>
           <div id="menuGroupDisplay">
-            
             <div class="menu-row" id="rowFont">
               <span>文字サイズ</span>
-              <div class="font-choices" role="group" aria-label="文字サイズ">
-                <button type="button" id="fontStdBtn" class="font-choice" aria-pressed="true">標準</button>
-                <span class="font-sep" aria-hidden="true">／</span>
-                <button type="button" id="fontLargeBtn" class="font-choice" aria-pressed="false">大</button>
+              <div class="seg font-choices" role="group" aria-label="文字サイズ">
+                <button type="button" id="fontStdBtn" class="seg-btn font-choice" aria-pressed="true">標準</button>
+                <button type="button" id="fontLargeBtn" class="seg-btn font-choice" aria-pressed="false">大</button>
               </div>
             </div>
             <label class="menu-row toggle-label" id="rowRuby"><span>フリガナ</span><input type="checkbox" id="rubyToggle" /></label>
             <label class="menu-row toggle-label" id="rowBg"><span>背景イメージ</span><input type="checkbox" id="bgToggle" checked /></label>
             <label class="menu-row toggle-label" id="rowWake"><span>画面を暗くしない</span><input type="checkbox" id="wakeLockToggle" checked /></label>
           </div>
-          <h4 class="setting-group has-toggle" id="menuHeadPlay"><span id="menuHeadPlayText">朗読</span><label class="heading-toggle"><input type="checkbox" id="narrationToggle" aria-label="音読" checked /></label></h4>
-          <div id="menuGroupPlay">
-            
-            
-            <div class="menu-row" id="rowSpeed">
-              <span>速さ</span>
-              <div class="speed-choices" id="speedChoices" role="group" aria-label="速さ"></div>
-            </div>
-            <label class="menu-row toggle-label" id="rowHl"><span>朗読中の文を強調</span><input type="checkbox" id="hlToggle" checked /></label>
-            <label class="menu-row toggle-label" id="rowBgPlay"><span>バックグラウンド再生</span><input type="checkbox" id="bgPlayToggle" checked /></label>
+          <h4 class="setting-group" id="menuHeadAudio">音</h4>
+          <div id="menuGroupAudio">
+            <label class="menu-row toggle-label" id="rowPageSound"><span>ページめくり音</span><input type="checkbox" id="pageSoundToggle" checked /></label>
+            <label class="menu-row toggle-label" id="rowBgm"><span>BGM</span><input type="checkbox" id="bgmToggle" checked /></label>
           </div>
+        </div>
+
+        
+        <div class="menu-nav">
+          <button id="toCoverFromMenuBtn" type="button" class="menu-nav-btn" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5.4v13.4" /><path d="M12 5.4C9.7 4.2 6.9 3.7 4.3 4.3v13.2c2.6-.6 5.4-.1 7.7 1.3 2.3-1.4 5.1-1.9 7.7-1.3V4.3c-2.6-.6-5.4-.1-7.7 1.1Z" /></svg><span>表紙へ</span></button>
+          <button id="tocFromMenuBtn" type="button" class="menu-nav-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M5 7h14M5 12h14M5 17h14" /></svg><span>目次へ</span></button>
         </div>
 
         
