@@ -16,8 +16,8 @@
     <link rel="icon" type="image/png" href="icons/icon-192.png" />
     <link rel="apple-touch-icon" href="icons/apple-touch-icon.png" />
     <title>十三秒先の隣人 — 桜井 みゅう</title>
-    <script type="module" crossorigin src="./assets/index-BXmSDr9Z.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-CvvCgKzo.css">
+    <script type="module" crossorigin src="./assets/index-DS60y_NX.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-CRkzX1fy.css">
   <link rel="manifest" href="./manifest.webmanifest"><meta name="robots" content="noindex, nofollow" />
 </head>
   <body>
@@ -154,35 +154,33 @@
 
         
         <div class="menu-section">
-          <h4 class="setting-group" id="menuHeadPlay">朗読</h4>
-          <div id="menuGroupPlay">
+          <div id="menuGroupMain">
             <label class="menu-row toggle-label" id="rowNarration"><span>朗読する</span><input type="checkbox" id="narrationToggle" checked /></label>
             
-            <div class="menu-row" id="rowSpeed">
+            <div class="menu-row menu-row-stack" id="rowSpeed">
               <span>速さ</span>
               <div class="seg speed-choices" id="speedChoices" role="group" aria-label="速さ"></div>
             </div>
-            <label class="menu-row toggle-label" id="rowHl"><span>読んでいる文を強調</span><input type="checkbox" id="hlToggle" checked /></label>
-            <label class="menu-row toggle-label" id="rowBgPlay"><span>画面を消しても再生</span><input type="checkbox" id="bgPlayToggle" checked /></label>
-          </div>
-          <h4 class="setting-group" id="menuHeadDisplay">表示</h4>
-          <div id="menuGroupDisplay">
-            <div class="menu-row" id="rowFont">
+            <div class="menu-row menu-row-stack" id="rowFont">
               <span>文字サイズ</span>
               <div class="seg font-choices" role="group" aria-label="文字サイズ">
                 <button type="button" id="fontStdBtn" class="seg-btn font-choice" aria-pressed="true">標準</button>
                 <button type="button" id="fontLargeBtn" class="seg-btn font-choice" aria-pressed="false">大</button>
               </div>
             </div>
-            <label class="menu-row toggle-label" id="rowRuby"><span>フリガナ</span><input type="checkbox" id="rubyToggle" /></label>
-            <label class="menu-row toggle-label" id="rowBg"><span>背景イメージ</span><input type="checkbox" id="bgToggle" checked /></label>
-            <label class="menu-row toggle-label" id="rowWake"><span>画面を暗くしない</span><input type="checkbox" id="wakeLockToggle" checked /></label>
-          </div>
-          <h4 class="setting-group" id="menuHeadAudio">音</h4>
-          <div id="menuGroupAudio">
-            <label class="menu-row toggle-label" id="rowPageSound"><span>ページめくり音</span><input type="checkbox" id="pageSoundToggle" checked /></label>
             <label class="menu-row toggle-label" id="rowBgm"><span>BGM</span><input type="checkbox" id="bgmToggle" checked /></label>
           </div>
+          <details id="menuMore" class="menu-more">
+            <summary id="menuMoreSummary" class="menu-more-sum"><span>詳しい設定</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6" /></svg></summary>
+            <div id="menuGroupMore">
+              <label class="menu-row toggle-label" id="rowPageSound"><span>ページめくり音</span><input type="checkbox" id="pageSoundToggle" checked /></label>
+              <label class="menu-row toggle-label" id="rowRuby"><span>フリガナ</span><input type="checkbox" id="rubyToggle" /></label>
+              <label class="menu-row toggle-label" id="rowBg"><span>背景イメージ</span><input type="checkbox" id="bgToggle" checked /></label>
+              <label class="menu-row toggle-label" id="rowWake"><span>画面を暗くしない</span><input type="checkbox" id="wakeLockToggle" checked /></label>
+              <label class="menu-row toggle-label" id="rowHl"><span>読んでいる文を強調</span><input type="checkbox" id="hlToggle" checked /></label>
+              <label class="menu-row toggle-label" id="rowBgPlay"><span>画面を消しても再生</span><input type="checkbox" id="bgPlayToggle" checked /></label>
+            </div>
+          </details>
         </div>
 
         
